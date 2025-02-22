@@ -126,7 +126,6 @@ public class ToDoApp {
         } finally {
             session.close();
         }
-
     }
 
     public static void showTasks() {
@@ -146,5 +145,4 @@ public class ToDoApp {
             session.close();
         }
     }
-
 }

@@ -11,7 +11,7 @@
         <property name = "hibernate.connection.username">root</property>
         <property name = "hibernate.connection.password">t@k3th3Gr3nd3l</property>
         <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name = "hibernate.show_sql">true</property>
+        <property name = "hibernate.show_sql">false</property>
         <mapping resource="ToDoTask.hbm.xml"/>
 
     </session-factory>
