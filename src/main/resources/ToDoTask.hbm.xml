@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "ToDoTask" table = "task">
+
+        <meta attribute = "class-description">
+            This class contains task details/
+        </meta>
+        <id name = "id" type = "int" column = "taskId">
+            <generator class="native"/>
+        </id>
+
+        <property name = "description" column = "taskDesc" type = "string"/>
+        <property name = "dueDate" column = "taskDue" type = "calendar_date"/>
+        <property name = "startDate" column = "taskStart" type = "calendar_date"/>
+        <property name = "done" column = "taskDone" type = "boolean"/>
+
+    </class>
+
+</hibernate-mapping>
