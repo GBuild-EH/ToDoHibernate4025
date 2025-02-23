@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 public class ToDoTask
 {
-    @Id @Column(name = "taskId") private int id;
+    @Id @Column(name = "taskId") private Integer id;
     @Column(name = "taskDesc") private String description;
     @Column(name = "taskDue") private GregorianCalendar dueDate;
     @Column(name = "taskStart") private GregorianCalendar startDate;
@@ -42,10 +42,10 @@ public class ToDoTask
     }
 
     //Getter methods and completion toggle
-    public int getId() {
+    public Integer getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
     public String getDescription() {
